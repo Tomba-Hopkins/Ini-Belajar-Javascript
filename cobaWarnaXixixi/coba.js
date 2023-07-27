@@ -43,7 +43,7 @@ slideMerah.addEventListener('input', function(){
 
 	const randomText = Math.floor(Math.random() * 10 + 1);
 	if(randomText < 3){
-		h1.innerHTML = 'KONTOLLLLLL';
+		h1.innerHTML = 'No one understand me, maybe i am javascript';
 		h1.style.color = 'black';
 	}
 	else if(randomText > 3 && randomText < 6){
