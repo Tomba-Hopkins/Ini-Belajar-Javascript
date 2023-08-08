@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara pesan nasi goreng</title>
+    <link rel="stylesheet" href="dist/css/final.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <section class="container bg-secondary w-full">
+        <div class="mx-4 py-3">
+            <div class="bg-primary w-full text-3xl p-5 rounded-md">
+                <h1 class="text-gelapDua font-bold  font-sans text-center">Tekan Tombol Dibawah Untuk Generate Quote
+                </h1>
+                <button
+                    class="tombolS bg-white w-20 h-5 rounded-lg block mx-auto p-5 mt-4 hover:bg-slate-900 hover:shadow-lg duration-500 ring-2 ring-blue-500"
+                    type="button"></button>
+                <div class="w-full rounded-lg mt-5 font-serif bg-slate-500 text-white text-center flex filsuf p-4">
+                    <p class="quot"></p>
+                </div>
+            </div>
+        </div>
+        <p class="bottom-0 text-center text-gelapDua font-bold text-sm py-3">Efek Type Dibuat Menggunakan
+            <span class="font-bold text-sky-500">CSS</span>
+        </p>
+    </section>
+    <br>
+
+
+    <section class="container bg-gelap w-full">
+        <div class="mx-4 py-3">
+            <div class="bg-primary w-full text-3xl p-5 rounded-md">
+                <h1 class="text-gelapDua font-bold font-mono text-center">Tekan Tombol dibawah ini Untuk Generate Quote
+                </h1>
+                <button
+                    class="bg-white w-20 h-5 rounded-lg block mx-auto p-5 mt-4 hover:bg-slate-500 hover:shadow-lg duration-500 ring-2 ring-blue-500"
+                    type="button" onclick="ngetik()"></button>
+                <div class="w-full rounded-lg mt-5 font-serif bg-gelap text-white text-center filsufD p-4">
+                    <p class="text-white text-[8px] md:text-base lg:text-xl" id="ketik"></p>
+                </div>
+            </div>
+        </div>
+        <p class="bottom-0 text-center text-white font-semibold text-sm py-3 font-mono">Efek Type Dibuat Menggunakan
+            <span class="font-bold text-yellow-400">Javascript</span>
+        </p>
+    </section>
+
+    <footer class="w-full h-full mt-4 p-4 bottom-0 flex">
+        <div class="w-full bg-purple-400 h-1/2 text-sm">
+            <p class="text-center font-bold font-mono bottom-0">Copyright 2023, dibuat oleh <span
+                    class="text-slate-500">sidi</span></p>
+        </div>
+    </footer>
+
+
+    <script>
+        const tombol = document.querySelector('.tombolS');
+        var quotes = ["Bakwan Jagung", "Bawang Goreng", "Tempe Goreng", "Sebaskom full", "KsabarL", "Maiki Salamun", "3² = 6"
+        ];
+
+        const quot = document.querySelector('.quot');
+
+        function filsufMuda() {
+            var random = Math.floor(Math.random() * quotes.length);
+            quot.classList.add('testis');
+            quot.innerHTML = quotes[random];
+        }
+
+        tombol.addEventListener('click', function () {
+            filsufMuda();
+        })
+
+    </script>
+
+
+    <script src="src/script.js"></script>
+</body>
+
+</html>
