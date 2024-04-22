@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --item: #06170d;
+    --primary: #FFB000;
+    --secondary: #F5F5DC;
+}
+
+
+
+body{
+    background-color: var(--item);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pesan {
+    margin: 2rem;
+    font-size: small;
+    color: white;
+    font-family: monospace;
+    text-align: center;
+}
+
+form {
+    width: 40vw;
+    height: 20vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 0.5rem;
+}
+
+form input {
+    text-align: center;
+    background-color: var(--primary);
+    color: var(--secondary);
+    transition: 1s;
+}
+
+form input:focus {
+    outline: 2px solid var(--primary);
+    background-color: var(--item);
+}
+
+form button {
+    width: 50%;
+    height: 8rem;
+    text-align: center;
+    margin:  0.5rem auto;
+    background-color: var(--primary);
+    font-weight: bold;
+    border-radius: 10%;
+    transition: 0.2s;
+}
+
+form button:hover {
+    background-color: var(--secondary);
+}
+
+.container {
+    width: 90vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.card {
+    width: 10rem;
+    height: 5rem;
+    margin: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-weight: bolder;
+    color: var(--primary);
+    box-shadow: 0 10px 50px 12px var(--primary);
+}
+
+.new-card {
+    animation: geser 1s linear;
+}
+
+@keyframes geser {
+    0% {
+        margin-left: 100%;
+        opacity: 0;
+    }
+    100% {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .container {
+        align-items: center;
+        flex-direction: column;
+    } 
+    .card {
+        width: 90%;
+        height: 20%;
+        border-radius: 2%;
+        margin: 3rem auto;
+    }
+    .name, .price {
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    letter-spacing: 0.1rem;
+    }
+}
