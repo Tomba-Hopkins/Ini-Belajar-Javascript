@@ -86,10 +86,6 @@ form button:hover {
     box-shadow: 0 10px 50px 12px var(--primary);
 }
 
-.new-card {
-    animation: geser 1s linear;
-}
-
 @keyframes geser {
     0% {
         margin-left: 100%;

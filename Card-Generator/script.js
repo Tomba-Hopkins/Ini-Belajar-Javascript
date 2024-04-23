@@ -4,19 +4,30 @@ const button = document.querySelector('.submit')
 const container = document.querySelector('.container')
 const pesan = document.querySelector('.pesan')
 
+let count = 0
 
 button.addEventListener('click', (ev) => {
 
     ev.preventDefault()
-        
+    
     const newCard = document.createElement('div')
-    newCard.classList.add('card', 'new-card')
+    newCard.classList.add('card', `slide${count}`)
     newCard.innerHTML = `
-        <p class="name">Name: ${name.value}</p>
-        <p class="price">Price: $${price.value}</p>
-        `
+    <p class="name">Name: ${name.value}</p>
+    <p class="price">Price: $${price.value}</p>
+    `
     container.appendChild(newCard)
-
+    
+    document.querySelector(`.slide${count}`).style.animation = "geser 1s linear"
+    
+    count++
+    
+    newCard.addEventListener('transitionend', () => {
+        if(newCard.classList.contains(`slide${count - 1}`)) {
+            document.querySelector(`.slide${count - 1}`).style.animation = "none"
+        }
+    })
+    
 })
 
 
