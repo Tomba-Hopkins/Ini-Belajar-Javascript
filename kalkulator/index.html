@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="kalkulator">
+    <div class="layar">
+        <div class="isi">
+            <input class="isi-layar" readonly>
+        </div>
+    </div>
+    <div class="keyboard">
+        <button onclick="cetakLayar('1')" value="1">1</button>
+        <button onclick="cetakLayar('2')" value="2">2</button>
+        <button onclick="cetakLayar('3')" value="3">3</button>
+        <button onclick="cetakLayar('4')" value="4">4</button>
+        <button onclick="cetakLayar('5')" value="5">5</button>
+        <button onclick="cetakLayar('6')" value="6">6</button>
+        <button onclick="cetakLayar('7')" value="7">7</button>
+        <button onclick="cetakLayar('8')" value="8">8</button>
+        <button onclick="cetakLayar('9')" value="9">9</button>
+        <button onclick="cetakLayar('0')" value="0">0</button>
+        <button class="ijo" onclick="cetakLayar('+')" value="+">+</button>
+        <button class="ijo" onclick="cetakLayar('-')" value="-">-</button>
+        <button class="ijo" onclick="cetakLayar('*')" value="*">*</button>
+        <button class="ijo" onclick="cetakLayar('/')" value="/">/</button>
+        <button class="ijo" onclick="cetakLayar('%')" value="%">%</button>
+        <button class="ijo" onclick="cetakLayar('.')" value=".">.</button>
+        <button class="ijo" onclick="clearD()">C</button>
+        <button class="ijo" onclick="calculate()">=</button>
+    </div>
+</div>
+    
+<script src="script.js"></script>
+</body>
+</html>
