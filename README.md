@@ -13,3 +13,5 @@
 🚀 [The Jojo Xixixi](https://tomba-hopkins.github.io/Ini-Belajar-Javascript/theJojoxixi)
 
 🚀 [Type Animasi](https://tomba-hopkins.github.io/Ini-Belajar-Javascript/type-animasi)
+
+🚀 [Kalkulator](https://tomba-hopkins.github.io/Ini-Belajar-Javascript/kalkulator)
