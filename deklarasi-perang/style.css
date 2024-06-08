@@ -1,0 +1,87 @@
+:root{
+    --item: #212A3E;
+    --putih: #F1F6F9;
+}
+
+body {
+    background-color: #212A3E;
+    color: var(--putih);
+    font-family: 'Alkatra';
+}
+
+header{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.gambar {
+    width: 50%;
+    margin: auto;
+}
+
+
+main {
+    width: 100%;
+    height: 50vh;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.warning {
+    text-align: center;
+}
+
+main button {
+    width: 4rem;
+    height: 2rem;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    border: 3px solid var(--item);
+    color: var(--item);
+    background-color: var(--putih);
+    font-weight: bold;
+    transition: 0.1s;
+
+}
+
+main button:active{
+    background-color: #80899e;
+    color: var(--putih);
+}
+
+/* .turun {
+    animation: 10s hujan infinite alternate;
+} */
+
+@keyframes splash {
+    0% {
+        filter: brightness(10);
+    }
+    100% {
+        filter: brightness(1);
+    }
+}
+
+@keyframes hujan {
+    0% {
+        transform: translateY(-100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+
+.decline {
+    position: relative;
+}
