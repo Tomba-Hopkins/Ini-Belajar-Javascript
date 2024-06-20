@@ -1,10 +1,12 @@
-function getTimeUntilBirthday(birthday) {
+function getTimeUntilBirthday(birthday, hour = 0, minute = 0) {
     const now = new Date();
     const currentYear = now.getFullYear();
 
     let nextBirthday = new Date(`${currentYear}-${birthday}`);
+    nextBirthday.setHours(hour, minute, 0, 0);
 
-    if (now > nextBirthday) {
+    const isBirthdayPassed = now > nextBirthday;
+    if (isBirthdayPassed) {
         nextBirthday.setFullYear(currentYear + 1);
     }
 
@@ -21,13 +23,23 @@ function getTimeUntilBirthday(birthday) {
         days,
         hours,
         minutes,
-        seconds
+        seconds,
+        dahLewat: isBirthdayPassed
     };
 }
 
 function updateCountdown() {
-    const birthday = "7-04"; 
-    const timeUntilBirthday = getTimeUntilBirthday(birthday);
+    const birthday = "07-04"; 
+    const targetHour = 15; 
+    const targetMinute = 21; 
+
+    const timeUntilBirthday = getTimeUntilBirthday(birthday, targetHour, targetMinute);
+
+    if (timeUntilBirthday.dahLewat) {
+        document.querySelector('header').innerHTML = `<p>Pepek</p>`;
+        clearInterval(interValid);
+        return;
+    }
 
     document.querySelector('.month').textContent = timeUntilBirthday.months;
     document.querySelector('.day').textContent = timeUntilBirthday.days;
@@ -36,6 +48,5 @@ function updateCountdown() {
     document.querySelector('.second').textContent = timeUntilBirthday.seconds;
 }
 
-setInterval(updateCountdown, 1000);
-
+const interValid = setInterval(updateCountdown, 1000);
 updateCountdown();
