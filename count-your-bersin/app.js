@@ -36,7 +36,11 @@ function updateCountdown() {
     const timeUntilBirthday = getTimeUntilBirthday(birthday, targetHour, targetMinute);
 
     if (timeUntilBirthday.dahLewat) {
-        document.querySelector('header').innerHTML = `<p>Pepek</p>`;
+        const main = document.querySelector('main')
+        const header = document.querySelector('header')
+        main.style.display = 'none'
+        header.style.display = 'flex'
+
         clearInterval(interValid);
         return;
     }

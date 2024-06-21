@@ -47,3 +47,8 @@ main span {
 .clock span {
     font-weight: bold;
 }
+
+
+header {
+    display: none;
+}
