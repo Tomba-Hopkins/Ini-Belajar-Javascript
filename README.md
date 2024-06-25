@@ -15,3 +15,5 @@
 🚀 [Type Animasi](https://tomba-hopkins.github.io/Ini-Belajar-Javascript/type-animasi)
 
 🚀 [Kalkulator](https://tomba-hopkins.github.io/Ini-Belajar-Javascript/kalkulator)
+
+🚀 [Cek Khodam](https://tomba-hopkins.github.io/Ini-Belajar-Javascript/cek-khodam/)
