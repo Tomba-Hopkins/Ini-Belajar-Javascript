@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: var(--primary);
-    font-family: 'Poiret One', cursive;
+    font-family: cursive;
 }
 
 main {
@@ -65,6 +65,10 @@ main .container button:hover {
 
 main .container button:active{
     outline: 4px solid var(--sebasdary);
+}
+
+main .container p {
+    text-align: center;
 }
 
 
