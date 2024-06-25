@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: var(--primary);
-    font-family: cursive;
+    font-family: "Lato", "Open Sans", sans-serif;
 }
 
 main {
