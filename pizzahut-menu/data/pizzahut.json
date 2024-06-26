@@ -1,0 +1,74 @@
+{
+    "menu": [
+        {
+            "kategori":"pizza",
+            "nama":"Meat Lovers",
+            "deskripsi":"Sosis Sapi, Daging Sapi Cincang, Burger Sapi, Sosis Ayam, dan Keju Mozzarella",
+            "harga":"49.500",
+            "gambar":"meat-lovers.jpg"
+        },
+        {
+            "kategori":"pizza",
+            "nama":"Pepperoni",
+            "deskripsi":"Pepperoni Sapi dan Keju Mozzarella",
+            "harga":"35.000",
+            "gambar":"pepperoni.jpg"
+        },
+        {
+            "kategori":"pizza",
+            "nama":"Veggie Garden",
+            "deskripsi":"Jagung, Jamur, Paprika Merah, Paprika Hijau, Nanas, dan Keju Mozzarella",
+            "harga":"27.000",
+            "gambar":"veggie-garden.jpg"
+        },
+        {
+            "kategori":"pizza",
+            "nama":"Cheese Lovers",
+            "deskripsi":"Keju Mozzarella (String & Shredded) dan Keju Parmesan, Saus Original Signature dan saus Mayonnaise",
+            "harga":"48.000",
+            "gambar":"cheese-lovers.jpg"
+        },
+        {
+            "kategori":"pasta",
+            "nama":"Flaming Hot Chicken",
+            "deskripsi":"Pasta Fettuccine, Ayam, Sosis Ayam, Minyak Cabe, dan Daun Bawang",
+            "harga":"25.000",
+            "gambar":"flaming-hot.jpg"
+        },
+        {
+            "kategori":"pasta",
+            "nama":"Beef Lasagna",
+            "deskripsi":"Lasagna, Daging Sapi Cincang, dan Saus Krim Putih",
+            "harga":"35.000",
+            "gambar":"beef-lasagna.jpg"
+        },
+        {
+            "kategori":"appetizer",
+            "nama":"Soup of the Day",
+            "deskripsi":"Sup Spesial Harian",
+            "harga":"15.000",
+            "gambar":"soup.jpg"
+        },
+        {
+            "kategori":"appetizer",
+            "nama":"Fresh Salad",
+            "deskripsi":"Pilihan Sayuran dan Buah-Buahan Segar beserta Saus Pilihan",
+            "harga":"12.000",
+            "gambar":"fresh-salad.jpg"
+        },
+        {
+            "kategori":"drink",
+            "nama":"Avocado Juice",
+            "deskripsi":"Jus Alpukat",
+            "harga":"17.000",
+            "gambar":"avocado.jpg"
+        },
+        {
+            "kategori":"drink",
+            "nama":"Toffee Coffee",
+            "deskripsi":"Kopi, Sirup Karamel, dan Whipped Cream",
+            "harga":"22.000",
+            "gambar":"toffee-coffee.jpg"
+        }
+    ]
+}
