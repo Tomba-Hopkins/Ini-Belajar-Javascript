@@ -1,0 +1,74 @@
+{
+    "menu": [
+        {
+            "kategori":"roti",
+            "nama":"Roti ini",
+            "deskripsi":"Roti ini dan itu adalah anu",
+            "harga":"49.500",
+            "gambar":"roti-ini.jpg"
+        },
+        {
+            "kategori":"roti",
+            "nama":"Batagor keju",
+            "deskripsi":"Apa itu saos kacang kami memakai batagor sebelah",
+            "harga":"35.000",
+            "gambar":"batagor-keju.jpg"
+        },
+        {
+            "kategori":"roti",
+            "nama":"Roti Tampan",
+            "deskripsi":"Ketampanan dari roti dapat membuat",
+            "harga":"27.000",
+            "gambar":"roti-tampan.jpg"
+        },
+        {
+            "kategori":"roti",
+            "nama":"Udang bakar",
+            "deskripsi":"Saos udang bakar bisa membuat ku menjadi bakaran udang",
+            "harga":"48.000",
+            "gambar":"udang-bakar.jpg"
+        },
+        {
+            "kategori":"snack",
+            "nama":"Snack Kentang",
+            "deskripsi":"Kentang ini berbahan dasar ubi palsu dan kentang",
+            "harga":"25.000",
+            "gambar":"snack-kentang.jpg"
+        },
+        {
+            "kategori":"snack",
+            "nama":"Snack Ubi",
+            "deskripsi":"Terlihat seperti ubi namun ini adalah ubi",
+            "harga":"35.000",
+            "gambar":"snack-ubi.jpg"
+        },
+        {
+            "kategori":"nasi",
+            "nama":"Nasi Goreng",
+            "deskripsi":"Nasi goreng spesial dengan",
+            "harga":"15.000",
+            "gambar":"nasi-goreng.jpg"
+        },
+        {
+            "kategori":"nasi",
+            "nama":"Nasi bakar",
+            "deskripsi":"Pernahkah anda melihat nasi rebus ya itu adalah",
+            "harga":"12.000",
+            "gambar":"nasi-bakar.jpg"
+        },
+        {
+            "kategori":"minuman",
+            "nama":"Susu kuda laut",
+            "deskripsi":"Susu kuda laut dapat membuat anda menjadi",
+            "harga":"17.000",
+            "gambar":"susu-kuda-laut.jpg"
+        },
+        {
+            "kategori":"minuman",
+            "nama":"Kopi hangat",
+            "deskripsi":"Kopi dan matahari terbenam",
+            "harga":"22.000",
+            "gambar":"kopi-hangat.jpg"
+        }
+    ]
+}

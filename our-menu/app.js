@@ -1,7 +1,7 @@
 const cardPlace = document.querySelector('.card-place')
 
 const showAll = () => {
-    fetch('data/pizzahut.json')
+    fetch('data/menu.json')
 .then(res => {
     if (!res.ok){
         throw new Error('Gagal noh: ', res.statusText)
@@ -52,7 +52,7 @@ navLink.forEach((nl) => {
             return
         }
         
-        fetch('data/pizzahut.json')
+        fetch('data/menu.json')
         .then((response) => {
             if(!response.ok){
                 throw new Error('Error cil')
