@@ -30,8 +30,8 @@ function getTimeUntilBirthday(birthday, hour = 0, minute = 0) {
 
 function updateCountdown() {
     const birthday = "07-04"; 
-    const targetHour = 18; 
-    const targetMinute = 56; 
+    const targetHour = 0; 
+    const targetMinute = 0; 
 
     const timeUntilBirthday = getTimeUntilBirthday(birthday, targetHour, targetMinute);
 
