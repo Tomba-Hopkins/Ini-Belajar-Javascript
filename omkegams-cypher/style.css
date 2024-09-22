@@ -57,12 +57,12 @@ img {
     text-align: center;
     background-color: var(--primary-c);
     color: var(--cerah-c);
+    letter-spacing: 0.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .box input:focus-visible {
     outline: 3px solid var(--secondary-c);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    letter-spacing: 0.2rem;
     
 }
 

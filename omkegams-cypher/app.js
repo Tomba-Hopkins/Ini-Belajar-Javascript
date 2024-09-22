@@ -3,12 +3,13 @@ const words = document.querySelector('.words')
 const tombol = document.querySelector('.tombol')
 
 tombol.addEventListener('click', () => {
-
+    const result = omkeGams(words.value)
+    resultP.innerHTML = result
 })
 
 
 const omkeGams = (word) => {
-    if (word == "godplan" || "Godplan" || "GODPLAN") {
+    if (word == "godplan" || word == "Godplan" || word == "GODPLAN") {
         return "godvlan"
     }
 
@@ -34,4 +35,6 @@ const omkeGams = (word) => {
 
         r += w
     }
+
+    return r
 }
