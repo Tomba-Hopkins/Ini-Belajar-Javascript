@@ -1,6 +1,7 @@
 :root {
     --primary-c: #27374D;
-    --secondary-c: #526D82;
+    --secondary-c: #640D5F;
+    --cerah-c: #F5F5F5;
 }
 
 
@@ -49,4 +50,51 @@ img {
     color: transparent;
     font-weight: bolder;
     font-size: 1.8rem;
+}
+
+.box input {
+    padding: 0.7rem;
+    border-radius: 0.4rem;
+    text-align: center;
+    background-color: var(--primary-c);
+    color: var(--cerah-c);
+}
+
+.box input:focus-visible {
+    outline: 3px solid var(--secondary-c);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.2rem;
+    
+}
+
+.box button {
+    width: 50%;
+    height: 2rem;
+    margin: 0 auto;
+    background-color: var(--primary-c);
+    color: var(--cerah-c);
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.box button:hover {
+    background-color: var(--secondary-c);
+}
+
+.box button:active {
+    color: var(--primary-c);
+    animation: gede 0.4s ease;
+}
+
+
+@keyframes gede {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
 }
