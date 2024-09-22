@@ -1,3 +1,9 @@
+:root {
+    --primary-c: #27374D;
+    --secondary-c: #526D82;
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -35,4 +41,12 @@ img {
     backdrop-filter: blur(1rem);
     text-align: center;
     
+}
+
+.box h2 {
+    background-image: linear-gradient(to right, var(--primary-c), var(--secondary-c));
+    background-clip: text;
+    color: transparent;
+    font-weight: bolder;
+    font-size: 1.8rem;
 }
