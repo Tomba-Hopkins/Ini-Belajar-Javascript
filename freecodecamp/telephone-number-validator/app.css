@@ -1,0 +1,77 @@
+:root {
+    --dark: #27374D;
+    --light: #DDE6ED;
+    --second-dark: #526D82;
+    --second-light: #9DB2BF;
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+h1 {
+    text-align: center;
+    margin: 5rem auto;
+    background: linear-gradient(to bottom right, var(--light), var(--dark));
+    background-clip: text;
+    color: transparent;
+}
+
+main {
+    min-height: 40vh;
+    width: 80%;
+    margin: 2rem auto;
+    background: linear-gradient(to right, var(--light), var(--second-light));
+    color: var(--second-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    border-radius: 0.8rem;
+}
+
+section {
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+input {
+    background-color: var(--dark);
+    padding: 0.8rem;
+    color: var(--light);
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+input:focus {
+    outline: 2px solid var(--second-dark);
+}
+
+section button {
+    width: 5rem;
+    height: 2rem;
+    margin: 0 0.5rem;
+    background: linear-gradient(to bottom, white, var(--dark));
+    color: var(--dark);
+    font-weight: bold;
+    border-radius: 0.3rem;
+}
+
+section button:active {
+    animation: klik 0.2s linear;
+}
+
+p {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+
+@keyframes klik {
+    to {
+        border: 1px solid var(--second-light);
+        transform: scale(1.2);
+    }
+}
