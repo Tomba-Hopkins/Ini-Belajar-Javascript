@@ -44,4 +44,14 @@ main button {
   background-color: var(--secondary);
   color: var(--light);
   border: 0.1rem solid var(--primary);
+  transition: all 0.2s ease;
+}
+
+main button:hover {
+  background-color: #14274e;
+}
+
+main button:active {
+  transform: scale(1.2);
+  background-color: #9ba4b4;
 }
