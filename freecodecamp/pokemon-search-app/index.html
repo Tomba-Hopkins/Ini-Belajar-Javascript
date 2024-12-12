@@ -9,28 +9,32 @@
   <body>
     <h1 class="headline">Pokemon Search</h1>
     <main>
-      <div class="search">
+      <form class="search">
         <label for="search-input">Search with name or ID pokemon</label>
         <div class="inputs">
-          <input type="text" id="search-input" />
-          <button id="search-button">Search</button>
+          <input type="text" id="search-input" required />
+          <button type="submit" id="search-button">Search</button>
         </div>
-      </div>
+      </form>
       <div class="profile">
-        <p id="pokemon-name">Sebus<span id="pokemon-id"> #1</span></p>
+        <div class="name">
+          <p id="pokemon-name"></p>
+          <span id="pokemon-id"></span>
+        </div>
         <p>
-          <span id="weight">Weight: 2</span> <span id="height">Height: 5</span>
+          <span id="weight"></span> <br />
+          <span id="height"></span>
         </p>
-        <img src="" alt="" />
-        <p id="types">Grass, Water</p>
+        <img class="gambar" alt="" />
+        <p id="types"></p>
       </div>
       <div class="stats">
-        <p id="hp">HP:</p>
-        <p id="attack">Attack:</p>
-        <p id="defense">Defense:</p>
-        <p id="special-attack">Sp. Attack:</p>
-        <p id="special-defense">Sp. Defense:</p>
-        <p id="speed">Speed:</p>
+        <p>HP: <span id="hp"></span></p>
+        <p>Attack: <span id="attack"></span></p>
+        <p>Defense: <span id="defense"></span></p>
+        <p>Sp. Attack: <span id="special-attack"></span></p>
+        <p>Sp. Defense: <span id="special-defense"></span></p>
+        <p>Speed: <span id="speed"></span></p>
       </div>
     </main>
     <script src="./script.js"></script>

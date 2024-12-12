@@ -94,6 +94,11 @@ main .search .inputs button:active {
   gap: 1rem;
 }
 
+.profile .name {
+  display: flex;
+  gap: 0.5rem;
+}
+
 .stats {
   display: flex;
   flex-direction: column;
