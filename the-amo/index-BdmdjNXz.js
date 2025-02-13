@@ -18377,7 +18377,7 @@ function AA({ submitHandler: a, correct: l }) {
                 children: [
                   L.jsx("p", {
                     className: "text-green-400 my-4",
-                    children: "Nice one, goodgirl.",
+                    children: "GILAK PINTER BANGET KAMU",
                   }),
                   L.jsx("small", {
                     className: "text-xs",
@@ -18504,7 +18504,7 @@ function xA({ submitHandler: a, correct: l }) {
                 children: [
                   L.jsx("p", {
                     className: "text-green-400 my-4",
-                    children: "Nice one, goodgirl.",
+                    children: "I love ur focus",
                   }),
                   L.jsx("small", {
                     className: "text-xs",
