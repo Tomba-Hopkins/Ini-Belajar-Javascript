@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom mana</title>
+    <style>
+      @font-face {
+        font-family: "dom-mana";
+        src: url("fonts/Eastman-Grotesque-Alt-Regular-trial.otf");
+      }
+
+      body {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        gap: 5rem;
+      }
+
+      input {
+        padding: 0.5rem;
+      }
+
+      .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .output {
+        font-family: "dom-mana";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>INPUT</h1>
+      <input type="text" class="input-masuk" />
+    </div>
+    <div class="box">
+      <h1>OUTPUT</h1>
+      <p class="output"></p>
+    </div>
+
+    <script>
+      const inpMasuk = document.querySelector(".input-masuk");
+      const output = document.querySelector(".output");
+
+      inpMasuk.addEventListener("input", () => {
+        output.textContent = inpMasuk.value;
+      });
+    </script>
+  </body>
+</html>
